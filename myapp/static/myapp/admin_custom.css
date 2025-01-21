@@ -1,0 +1,26 @@
+:root {
+
+    --selected-row:#285d28;
+    --primary: #285d28;
+    --body-quiet-color: #ffffff;
+    --secondary: #35A942;
+    --link-hover-color: #35A942;
+    --header-bg: var(--secondary);
+    --accent: #ffffff;
+    --link-fg: #ffffff;
+    --header-color: #ffffff;
+    --selected-row: #285d28;
+    --default-button-bg: #285d28;
+    --button-hover-bg: #285d28;
+    
+}
+
+/* #header {
+    background: url('/static/myapp/images/logo.png') no-repeat left center;
+    background-size: 150px auto; 
+    padding-left: 160px; 
+}
+
+#header h1 {
+    display: none;
+} */

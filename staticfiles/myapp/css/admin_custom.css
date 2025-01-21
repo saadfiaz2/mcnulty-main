@@ -1,0 +1,27 @@
+    /* Change background color */
+    body {
+        background-color: #ff0000; /* Light grayish background */
+    }
+
+    /* Change header background color */
+    #header {
+        background-color: #ff0000; /* Green header */
+    }
+
+    /* Change text color of header */
+    #header h1 {
+        color: white;
+    }
+
+    /* Change color of navigation sidebar */
+    .module {
+        background-color: #2C3E50; /* Dark blue sidebar */
+        color: white;
+    }
+
+    /* Change color of links */
+    a {
+        color: #a3b8ce; /* Dodger blue links */
+    }
+
+    
