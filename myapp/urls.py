@@ -11,5 +11,5 @@ router.register(r'reasons', ReasonListView)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('login/', LoginView.as_view(), name='login'),  # Add login API endpoint
+    path('login/', LoginView.as_view(), name='login'), 
 ]
