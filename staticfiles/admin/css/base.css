@@ -2,12 +2,11 @@
     DJANGO Admin styles
 */
 
-
 /* VARIABLE DEFINITIONS */
 html[data-theme="light"],
 :root {
     --primary: #79aec8;
-    --secondary: #35A942;
+    --secondary: #417690;
     --accent: #f5dd5d;
     --primary-fg: #fff;
 
@@ -24,10 +23,10 @@ html[data-theme="light"],
 
     --breadcrumbs-fg: #c4dce8;
     --breadcrumbs-link-fg: var(--body-bg);
-    --breadcrumbs-bg: #285d28;
+    --breadcrumbs-bg: #264b5d;
 
-    --link-fg: #000;
-    --link-hover-color: #35A942;
+    --link-fg: #417893;
+    --link-hover-color: #036;
     --link-selected-fg: var(--secondary);
 
     --hairline-color: #e8e8e8;
@@ -45,8 +44,8 @@ html[data-theme="light"],
 
     --button-fg: #fff;
     --button-bg: var(--secondary);
-    --button-hover-bg: #285d28;
-    --default-button-bg: #285d28;
+    --button-hover-bg: #205067;
+    --default-button-bg: #205067;
     --default-button-hover-bg: var(--secondary);
     --close-button-bg: #747474;
     --close-button-hover-bg: #333;
