@@ -1,17 +1,17 @@
 :root {
 
-    --selected-row:#285d28;
-    --primary: #285d28; 
+    --selected-row:#2E462F;
+    --primary: #2E462F; 
     --body-quiet-color: #ffffff;
-    --secondary: #35A942;
-    --link-hover-color: #35A942;
+    --secondary: #1A4930;
+    --link-hover-color: #1A4930;
     --header-bg: var(--secondary);
     --accent: #ffffff;
     --link-fg: #ffffff;
     --header-color: #ffffff;
-    --selected-row: #285d28;
-    --default-button-bg: #285d28;
-    --button-hover-bg: #285d28;
+    --selected-row: #2E462F;
+    --default-button-bg: #2E462F;
+    --button-hover-bg: #2E462F;
     
 }
 

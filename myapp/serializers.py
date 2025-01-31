@@ -4,7 +4,7 @@ from .models import Reason, Record, Agent
 class AgentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Agent
-        fields = ['id', 'user', 'assigned_phone_number']
+        fields = ['id', 'user', 'phone_numbers']
         
 
 class ReasonSerializer(serializers.ModelSerializer):
@@ -18,7 +18,7 @@ class RecordSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Record
-        fields = ['id', 'agent', 'number', 'delay', 'reason'] 
+        fields = ['id', 'agent', 'number', 'delay', 'reason', 'time'] 
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField(required=True)

@@ -32,10 +32,25 @@ class LoginView(views.APIView):
             # Authenticate the user
             user = authenticate(username=username, password=password)
             if user is not None:
+                # Retrieve the agent object
+                agent = Agent.objects.filter(user=user).first()
+
+                if agent:
+                    phone_numbers = list(agent.phone_numbers.values_list("number", flat=True))
+                else:
+                    phone_numbers = []
+
                 # Generate or retrieve token
                 token, _ = Token.objects.get_or_create(user=user)
-                return Response({"message": "Login successful", "token": token.key}, status=status.HTTP_200_OK)
+
+                return Response({
+                    "message": "Login successful",
+                    "token": token.key,
+                    "userid": user.id,
+                    "numbers": phone_numbers  # Return the list of phone numbers
+                }, status=status.HTTP_200_OK)
             else:
                 return Response({"error": "Invalid username or password"}, status=status.HTTP_401_UNAUTHORIZED)
-        
+
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
