@@ -115,11 +115,24 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
+
+"""Default TimeZone for Django"""
 TIME_ZONE = "UTC"
-
 USE_I18N = True
-
 USE_TZ = True
+
+
+"""For ETC"""
+TIME_ZONE = "Etc/GMT"  # Set it to a valid IANA time zone
+USE_TZ = True  # Keep this True to enable time zone support
+
+
+"""For EST"""
+TIME_ZONE = "America/New_York"  # Eastern Time (ET) which auto-adjusts for daylight saving time
+USE_TZ = True  # Keep this enabled for proper timezone handling
+
+
+
 
 
 # Static files (CSS, JavaScript, Images)

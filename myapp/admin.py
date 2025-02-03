@@ -67,7 +67,7 @@ class ReasonAdmin(admin.ModelAdmin):
 
 @admin.register(Record)
 class RecordAdmin(admin.ModelAdmin):
-    list_display = ('id', 'agent', 'number', 'reason', 'formatted_delay')
+    list_display = ('id', 'agent', 'number', 'reason', 'formatted_delay', 'time')
     list_filter = ('agent', 'reason',)
     search_fields = ('agent__user__username',)
     list_per_page = 10
